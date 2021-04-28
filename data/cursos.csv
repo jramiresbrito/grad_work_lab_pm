@@ -1,0 +1,10 @@
+id,nome,tipo,preco,numero_de_aulas,numero_de_provas
+1,Engenharia de Software,2,168.0,50,3
+2,Ciência da Computação,2,168.0,50,3
+3,Engenharia de Computação,2,168.0,50,3
+4,Jogos Digitais,1,140.0,35,2
+5,HTML5,0,100.0,20,1
+6,CSS3,0,100.0,20,1
+7,JavaScript,0,100.0,20,1
+8,Ruby,0,100.0,20,1
+9,Python,0,100.0,20,1
