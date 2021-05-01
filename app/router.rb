@@ -27,15 +27,18 @@ class Router
 
   def user_menu(choice)
     case choice
-    when 1 then @aluno_controller.add
-    when 2 then @aluno_controller.index
-    when 3 then @curso_controller.add
-    when 4 then @curso_controller.index
-    when 5 then @matricula_controller.add
-    when 6 then @matricula_controller.index
-    when 7 then @matricula_controller.watch_lesson
-    when 8 then @matricula_controller.do_exam
-    when 20 then sign_out
+    when 11 then @aluno_controller.add
+    when 12 then @aluno_controller.index
+    when 21 then @curso_controller.add
+    when 22 then @curso_controller.index
+    when 31 then @matricula_controller.add
+    when 32 then @matricula_controller.index
+    when 33 then @matricula_controller.watch_lesson
+    when 34 then @matricula_controller.do_exam
+    when 35 then @matricula_controller.alumni_purchases
+    when 36 then @matricula_controller.all_purchases
+    when 37 then @matricula_controller.issue_certificate
+    when 99 then sign_out
     when 9 then system 'clear'
     when 0 then exit
     else
