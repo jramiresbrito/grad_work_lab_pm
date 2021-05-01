@@ -49,13 +49,18 @@ class MatriculaView < BaseView
 
   def issue_certificate(alumni, course)
     puts `clear`
-    puts '╔═══════════════════════════════════════════╗'
-    puts '║      CERTIFICADO DE CONCLUSÃO             ║'
-    puts "║      ALUNO: #{alumni.nome.green}                          ║"
-    puts "║      CURSO: #{course.nome.yellow}        ║"
-    puts "║      Nº DE AULAS: #{course.numero_de_aulas.to_s.yellow}                      ║"
-    puts "║      Nº DE PROVAS: #{course.numero_de_provas.to_s.yellow}                      ║"
-    puts '╚═══════════════════════════════════════════╝'
+
+    alumni_string = alumni.nome.green + ' ' * (29 - alumni.nome.length)
+    course_string = course.nome.yellow + ' ' * (29 - course.nome.length)
+    lectures_string = course.numero_de_aulas.to_s.yellow + ' ' * (23 - course.numero_de_aulas.to_s.length)
+    exams_string = course.numero_de_provas.to_s.yellow + ' ' * (22 - course.numero_de_provas.to_s.length)
+    puts '╔══════════════════════════════════════════╗'
+    puts '║      CERTIFICADO DE CONCLUSÃO            ║'
+    puts "║      ALUNO: #{alumni_string}║"
+    puts "║      CURSO: #{course_string}║"
+    puts "║      Nº DE AULAS: #{lectures_string}║"
+    puts "║      Nº DE PROVAS: #{exams_string}║"
+    puts '╚══════════════════════════════════════════╝'
   end
 
   def cannot_issue_certificate(alumni, course)
