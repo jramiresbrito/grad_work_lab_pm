@@ -31,5 +31,6 @@
 * Password encryptation
 * Data persistance using CSV
 * Reports
+* Issue Certificate
 <hr>
 Ruby version: 2.6.6
